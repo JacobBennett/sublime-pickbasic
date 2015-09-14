@@ -96,7 +96,7 @@
 			<key>comment</key>
 			<string>Highlight lines where control-break logic starts</string>
 			<key>match</key>
-			<string>([A-Z_\.0-9]*)(:)\n</string>
+			<string>([A-Z_\.0-9]*)(:)\s*\n</string>
 			<key>name</key>
 			<string>entity.name.function.pick</string>
 		</dict>
