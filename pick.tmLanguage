@@ -57,6 +57,46 @@
 			<string>(CALL) ([A-Z0-9_\.-]+)</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.pick</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.pick</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>this will highlight the GOSUB keyword and the subroutine name called</string>
+			<key>match</key>
+			<string>(GOSUB)\s+([a-z_][a-z_\.0-9]*)</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.pick</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.pick</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Highlight lines where control-break logic starts</string>
+			<key>match</key>
+			<string>([A-Z_\.0-9]*)(:)\n</string>
+			<key>name</key>
+			<string>entity.name.function.pick</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>(\'[A-Za-z0-9\:\-\_ ]*\'|\"[A-Za-z0-9\:\-\_ ]*\")</string>
 			<key>name</key>
