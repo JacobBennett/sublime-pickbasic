@@ -38,6 +38,25 @@
 			<string>entity.name.function.pick</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type.pick</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.pick</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>this will highlight the CALL keyword and the name of the subsequent call seperately</string>
+			<key>match</key>
+			<string>(CALL) ([A-Z0-9_\.-]+)</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>(\'[A-Za-z0-9\:\-\_ ]*\'|\"[A-Za-z0-9\:\-\_ ]*\")</string>
 			<key>name</key>
