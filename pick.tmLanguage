@@ -33,7 +33,7 @@
 			<key>comment</key>
 			<string>this will highlight the subroutine keyword and the name of the subroutine seperately</string>
 			<key>match</key>
-			<string>(SUBROUTINE) ([A-Z_-]+)</string>
+			<string>(SUBROUTINE)\s+([A-Z0-9_-]+)</string>
 			<key>name</key>
 			<string>entity.name.function.pick</string>
 		</dict>
@@ -54,7 +54,9 @@
 			<key>comment</key>
 			<string>this will highlight the CALL keyword and the name of the subsequent call seperately</string>
 			<key>match</key>
-			<string>(CALL) ([A-Z0-9_\.-]+)</string>
+			<string>(CALL)\s+([A-Z0-9_\.-]+)</string>
+			<key>name</key>
+			<string>entity.name.function.pick</string>
 		</dict>
 		<dict>
 			<key>captures</key>
@@ -73,7 +75,9 @@
 			<key>comment</key>
 			<string>this will highlight the GOSUB keyword and the subroutine name called</string>
 			<key>match</key>
-			<string>(GOSUB)\s+([a-z_][a-z_\.0-9]*)</string>
+			<string>(GOSUB)\s+([A-Z_\.0-9]*)</string>
+			<key>name</key>
+			<string>entity.name.function.pick</string>
 		</dict>
 		<dict>
 			<key>captures</key>
